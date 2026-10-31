@@ -1,0 +1,10 @@
+# Exports et données : ne jamais versionner
+*.xlsx
+*.csv
+*.parquet
+simulation_excel/
+
+# Fichiers temporaires
+.ipynb_checkpoints/
+__pycache__/
+*.log
