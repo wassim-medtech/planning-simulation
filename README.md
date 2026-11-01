@@ -23,7 +23,6 @@ Notebook Microsoft Fabric (PySpark) qui simule la planification des OF à partir
 - `SIM_ARRETS` : périodes d'arrêt (tous postes)
 - `VERIF_STOCK`, `VERIF_ECART_OPS`, `VERIF_FENETRE` : vérifications activables
 - `HORIZON_DEB` / `HORIZON_FIN` : filtre sur les dates de besoin
-- `EVOL_QTE_PAR_ARTICLE` : scénario de demande, % d'évolution de la quantité par article (propagé aux SF via la nomenclature)
 
 ## Méthode de travail
 1. Chaque modification fait l'objet d'un commit avec un message clair (quoi + pourquoi).
