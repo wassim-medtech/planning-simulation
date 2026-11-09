@@ -9,15 +9,16 @@ Notebook Microsoft Fabric (PySpark) qui simule la planification des OF à partir
 | `simulation_planning.ipynb` | Groupage des OF, lissage et planification (capacité finie / infinie), écriture des tables `S_*`, export Excel |
 
 ## Tables lues (lecture seule)
-`sim_of_work`, `sim_nom_child`, `SIM_POSTE_CAPA`, `X3OF`, `X3ITM`
+`sim_of_work`, `sim_nom_child`, `SIM_POSTE_CAPA`, `X3OF`, `X3ITM`, et en mode Matière : `X3NOM`, `X3STOCK`, `X3DATERCP`
 
 ## Tables écrites (append, une ligne par `ID_SIM`)
 `Simulation`, `S_grouped_needs`, `S_smoothing`, `S_smoothing_operations`, `S_weekly_capacity`,
 `S_groups_anchors`, `S_produced_quantities`, `S_stock_movements`, `S_summary_division_status`,
-`S_failure_details`, `S_failure_summary_typologie`, `S_failure_summary_top`
+`S_failure_details`, `S_failure_summary_typologie`, `S_failure_summary_top`, `res_echecs_matiere` (mode Matière)
 
 ## Paramètres principaux (bloc en tête du notebook)
-- `CAPACITE_MODE` : `Finie` / `Infinie`
+- `CAPACITE_MODE` : `Finie` / `Infinie` / `Matiere` (capacité finie + disponibilité matière)
+- `HORIZON_MP_CRITIQUE_JOURS` : fenêtre de vérification des matières critiques (mode Matière)
 - `MODE_PLANIF` : `Plutot` / `Plutard`
 - `SIM_LAUNCH_DATE` : aucun OF planifié avant le lundi de cette semaine
 - `SIM_ARRETS` : périodes d'arrêt (tous postes)
